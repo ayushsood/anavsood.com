@@ -1,0 +1,106 @@
+html, body {
+  color: #555;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.container {
+  margin: 0 auto;
+  width: 900px;
+
+  header {
+    margin: 10px 20px;
+    height: 50px;
+    text-align: center;
+
+    .name {
+      float: left;
+      font-size: 50px;
+
+      .first-name {
+        color: #D2527F;
+      }
+      .last-name {
+        color: #BDC3C7;
+      }
+    }
+
+    .nav {
+      color: #6C7A89;
+      font-size: 18px;
+      float: right;
+
+      ul {
+        list-style-type: none;
+        margin: 25px 0 0 0;
+        padding: 0;
+
+        li {
+          display: inline;
+
+          a {
+            color: #555;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .post {
+    margin-top: 45px;
+
+    .post-header h2 {
+      float: right;
+      font-size: 50px;
+      height: 0;
+      right: 915px;
+      margin: 0;
+      position: relative;
+      top: -10px;
+    }
+  }
+
+
+  .home {
+    iframe {
+      margin: 0px 0 0 20px;
+    }
+    
+    .page-heading {
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding: 10px 20px;;
+      }
+
+      li~li {
+        border-left: 1px solid #EEE;
+      }
+    }
+
+  }
+
+  .about {
+    img {
+      border-radius: 100px;
+      float: left;
+      margin: 0 20px;
+    }
+  }
+
+  .contact form {
+    padding: 100px 0 100px 235px
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+  }
+}
