@@ -1,47 +1,64 @@
----
-layout: page
-title: Home
-permalink: /
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/788ce846d5.js" crossorigin="anonymous"></script>
+    <title>Anav Sood</title>
+    <style>
+      html, body {
+        background: #faf9f9;
+	color: #555b6e;
+	font-family: 'Montserrat', sans-serif;
+      }
 
-<div class="home">
-  <iframe width="853" height="480" src="http://www.youtube-nocookie.com/embed/tN3G117aRCw?rel=0" frameborder="0" allowfullscreen></iframe>
+      .container {
+	width: 500px;
+	margin: 100px auto;
+      }
 
-  <h3 class="page-heading">Posts</h3>
-  <ul class="post-list">
+      h1, h4 {
+        margin: 10px 0;
+      }
 
-    {% if site.posts[0] %}
-      <li>
-        <span class="post-meta">{{ site.posts[0].date | date: "%b %-d, %Y" }}</span>
+      ul {
+	list-style: none;
+	padding: 0;
+      }
 
-        <h2>
-          <a class="post-link" href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }}</a>
-        </h2>
-      </li>
-    {% endif %}
+      ul li {
+	margin-bottom: 5px;
+      }
 
-    {% if site.posts[1] %}
-      <li>
-        <span class="post-meta">{{ site.posts[1].date | date: "%b %-d, %Y" }}</span>
+      a {
+	color: #555b6e;
+	text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Anav Sood</h1>
+      <h4>Statistics PhD Student @ Stanford University</h4>
+      <ul>
+        <li>
+	  <a href="https://www.linkedin.com/in/anav-sood-423836117/">
+	    <i class="fab fa-linkedin"></i>
+	    LinkedIn
+	  </a>
+	</li>
+	<li>
+	  <a href="https://twitter.com/AnavSood">
+            <i class="fab fa-twitter-square"></i>
+	    Twitter
+	  </a>
+	</li>
+      </u>
+    </div>
+  </body>
+</html>
 
-        <h2>
-          <a class="post-link" href="{{ site.posts[1].url | prepend: site.baseurl }}">{{ site.posts[1].title }}</a>
-        </h2>
-      </li>
-    {% endif %}
-
-    {% if site.posts[2] %}
-      <li>
-        <span class="post-meta">{{ site.posts[2].date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ site.posts[2].url | prepend: site.baseurl }}">{{ site.posts[2].title }}</a>
-        </h2>
-      </li>
-    {% endif %}
-
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
